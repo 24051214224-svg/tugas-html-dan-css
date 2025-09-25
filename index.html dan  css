@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Rafi - Beranda</title>
+  <style>
+    body {
+      margin:0;
+      font-family:Arial,sans-serif;
+      color:#fff;
+      background: url('background.jp') no-repeat center center fixed; 
+      background-size: cover;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(0,0,0,0.8);
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    nav .logo { font-size:22px; font-weight:bold; color:#4CAF50; }
+    nav ul { list-style:none; display:flex; gap:20px; margin:0; padding:0; }
+    nav ul li a {
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+      transition:.3s;
+    }
+    nav ul li a:hover { color:#4CAF50; }
+
+    /* Hero Section */
+    header {
+      height:90vh;
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+                  url('header-bg.png') no-repeat center center;
+      background-size: cover;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:flex-start;
+      padding:0 60px;
+    }
+    header h1 { font-size:50px; margin:0; }
+    header p { font-size:18px; max-width:600px; margin:20px 0; line-height:1.6; }
+    .btn {
+      padding:12px 24px;
+      background:#4CAF50;
+      color:rgb(0, 0, 0);
+      border-radius:5px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:.3s;
+    }
+    .btn:hover { background:#45a049; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">website</div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="about.html">Tentang Saya</a></li>
+      <li><a href="projects.html">Proyek</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Halo, Saya Muhammad Rafi Ibrahim</h1>
+    <p>klik di bawah untuk informasi ku yaa!.</p>
+    <a href="projects.html" class="btn">Lihat Proyek</a>
+    ---
+    <a href="about.html" class="btn">tentang saya</a>
+  </header>
+</body>
+</html>
